@@ -6,13 +6,29 @@
 /*
  * The fun begins here.
  */
+
 html {
   font: 16px/1.5 Inconsolata, monospace;
 }
 
 body {
   margin: 2rem 0 5rem;
-  color: #333;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --pre-background-color: #f5f5f5;
+  --pre-text-color: #333;
+}
+
+.dark_theme {
+  --primary-color: #111;
+  --secondary-color: #fff;
+  --pre-background-color: #333;
+  --pre-text-color: #f5f5f5;
 }
 
 a {
@@ -29,19 +45,29 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Montserrat, monospace;
   margin: 0 0 0.5rem -0.1rem; /* align left edge */
   line-height: 1;
-  color: #111;
+  color: var(--secondary-color);
   text-rendering: optimizeLegibility;
 }
 
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  display: inline-flex;
 }
 
 h2 {
   margin-top: 2rem;
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
+}
+
+#icon{
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  cursor: pointer;
+  margin-left: 50px;
+  padding-top: 75px;
 }
 
 h2 a {
@@ -119,7 +145,7 @@ td {
 pre,
 code {
   font-family: "Source Code Pro", monospace;
-  background-color: #eee;
+  background-color: var(--pre-background-color);
 }
 
 pre {
@@ -129,6 +155,10 @@ pre {
 
 code {
   padding: .1rem .25rem;
+}
+
+iframe{
+  border: 1px solid
 }
 
 .container {
@@ -152,8 +182,8 @@ iframe#twitter-widget-0 {
 }
 
 .github-corner {
-  fill: #151513;
-  color: #fff;
+  fill: var(--secondary-color);
+  color: var(--primary-color);
   position: fixed;
   top: 0;
   border: 0;
