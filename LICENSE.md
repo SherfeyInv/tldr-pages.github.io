@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2015-2016 [The project contributors](https://github.com/tldr-pages/tldr-pages.github.io/graphs/contributors)
+Copyright (c) 2015-present [tldr.sh contributors](https://github.com/tldr-pages/tldr-pages.github.io/graphs/contributors)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
